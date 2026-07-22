@@ -1,0 +1,29 @@
+---
+import "../styles/global.css";
+
+interface Props {
+  title?: string;
+}
+
+const {
+  title = "Roscelin Nguefack | System Administrator & Cybersecurity"
+} = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+
+    <meta
+      name="description"
+      content="Portfolio of Roscelin Nguefack - System Administrator, Cybersecurity Enthusiast, and Infrastructure Engineer."
+    />
+  </head>
+
+  <body class="bg-slate-950 text-white min-h-screen">
+    <slot />
+  </body>
+</html>
