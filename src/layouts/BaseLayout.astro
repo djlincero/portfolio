@@ -1,12 +1,13 @@
 ---
 import "../styles/global.css";
+import Navbar from "../components/layout/Navbar.astro";
 
 interface Props {
   title?: string;
 }
 
 const {
-  title = "Roscelin Nguefack | System Administrator & Cybersecurity"
+  title = "Roscelin Nguefack | System Administrator & Cybersecurity",
 } = Astro.props;
 ---
 
@@ -24,6 +25,10 @@ const {
   </head>
 
   <body class="bg-slate-950 text-white min-h-screen">
-    <slot />
+    <Navbar />
+
+    <main>
+      <slot />
+    </main>
   </body>
 </html>

@@ -1,0 +1,43 @@
+---
+import ProjectCard from "../ui/ProjectCard.astro";
+---
+
+<section id="projects" class="mx-auto max-w-7xl px-6 py-24">
+  <div class="text-center">
+    <h2 class="text-4xl font-bold">Featured Projects</h2>
+
+    <p class="mt-4 text-slate-400">
+      Enterprise infrastructure, automation, and cybersecurity projects I've built.
+    </p>
+  </div>
+
+  <div class="mt-12 grid gap-8 md:grid-cols-2">
+
+    <ProjectCard
+      title="Enterprise Homelab"
+      description="Designed and deployed an enterprise infrastructure using Proxmox, Active Directory, pfSense, Wazuh, Prometheus, Grafana, and Ansible."
+      technologies={[
+        "Proxmox",
+        "Active Directory",
+        "pfSense",
+        "Wazuh",
+        "Prometheus",
+        "Grafana",
+        "Ansible"
+      ]}
+    />
+
+    <ProjectCard
+      title="Ansible Automation"
+      description="Automated Linux and Windows administration using Ansible playbooks, inventories, roles, WinRM, and SSH."
+      technologies={[
+        "Ansible",
+        "Linux",
+        "Windows",
+        "SSH",
+        "WinRM"
+      ]}
+    />
+
+  </div>
+</section>

@@ -1,17 +1,12 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import Hero from "../components/sections/Hero.astro";
+import About from "../components/sections/About.astro";
+import Projects from "../components/sections/Projects.astro";
 ---
 
-<BaseLayout title="Home">
-  <main class="flex min-h-screen items-center justify-center">
-    <div class="text-center">
-      <h1 class="text-6xl font-bold">
-        Welcome
-      </h1>
-
-      <p class="mt-4 text-slate-400">
-        My professional portfolio is under construction.
-      </p>
-    </div>
-  </main>
+<BaseLayout title="Roscelin Nguefack | Portfolio">
+  <Hero />
+  <About />
+  <Projects />
 </BaseLayout>
