@@ -1,0 +1,104 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Infrastructure Automation">
+
+<section class="mx-auto max-w-6xl px-6 py-24">
+
+    <h1 class="text-5xl font-bold">
+        Infrastructure Automation
+    </h1>
+
+    <p class="mt-6 text-slate-400 text-lg">
+        Automated Linux and Windows infrastructure using Ansible to deploy,
+        configure, and manage enterprise systems consistently across the
+        homelab environment.
+    </p>
+
+    <img
+        src="/images/network-topology.png"
+        alt="Infrastructure Automation"
+        class="mt-12 rounded-xl border border-slate-800 shadow-2xl"
+    />
+
+    <div class="mt-12 space-y-10">
+
+        <section>
+            <h2 class="text-3xl font-bold">
+                Project Overview
+            </h2>
+
+            <p class="mt-4 text-slate-400 leading-8">
+                Built an automation platform using Ansible to manage Linux and
+                Windows hosts from a centralized control node. The project
+                includes inventories, playbooks, roles, SSH authentication,
+                WinRM connectivity, and configuration management.
+            </p>
+        </section>
+
+        <section>
+            <h2 class="text-3xl font-bold">
+                Technologies Used
+            </h2>
+
+            <div class="mt-6 flex flex-wrap gap-3">
+
+                <span class="rounded bg-cyan-600 px-4 py-2">
+                    Ansible
+                </span>
+
+                <span class="rounded bg-cyan-600 px-4 py-2">
+                    Linux
+                </span>
+
+                <span class="rounded bg-cyan-600 px-4 py-2">
+                    Windows
+                </span>
+
+                <span class="rounded bg-cyan-600 px-4 py-2">
+                    SSH
+                </span>
+
+                <span class="rounded bg-cyan-600 px-4 py-2">
+                    WinRM
+                </span>
+
+                <span class="rounded bg-cyan-600 px-4 py-2">
+                    YAML
+                </span>
+
+            </div>
+        </section>
+
+        <section>
+            <h2 class="text-3xl font-bold">
+                Features
+            </h2>
+
+            <ul class="mt-6 list-disc pl-6 space-y-2 text-slate-400">
+
+                <li>Linux Automation</li>
+
+                <li>Windows Automation</li>
+
+                <li>Playbooks</li>
+
+                <li>Roles</li>
+
+                <li>Inventory Management</li>
+
+                <li>SSH Key Authentication</li>
+
+                <li>WinRM Remote Management</li>
+
+                <li>Configuration Management</li>
+
+            </ul>
+        </section>
+
+    </div>
+
+</section>
+
+</BaseLayout>
