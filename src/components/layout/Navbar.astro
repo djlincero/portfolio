@@ -1,39 +1,19 @@
-<header class="sticky top-0 z-50 border-b border-slate-800 bg-slate-950/90 backdrop-blur">
-  <nav class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-    <a href="/" class="text-xl font-bold tracking-wide">
-      Roscelin
+---
+const base = import.meta.env.BASE_URL;
+---
+
+<nav class="fixed top-0 left-0 right-0 z-50 bg-slate-950/80 backdrop-blur border-b border-slate-800">
+  <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+    <a href={base} class="text-xl font-bold tracking-wide">
+      DJL
     </a>
 
-    <ul class="hidden gap-8 md:flex">
-      <li>
-        <a href="#about" class="transition-colors hover:text-cyan-400">
-          About
-        </a>
-      </li>
-
-      <li>
-        <a href="#projects" class="transition-colors hover:text-cyan-400">
-          Projects
-        </a>
-      </li>
-
-      <li>
-        <a href="#skills" class="transition-colors hover:text-cyan-400">
-          Skills
-        </a>
-      </li>
-
-      <li>
-        <a href="#contact" class="transition-colors hover:text-cyan-400">
-          Contact
-        </a>
-      </li>
-      
-      <li>
-        <a href="/resume" class="hover:text-cyan-400">
-          Resume
-        </a>
-       </li>
-    </ul>
-  </nav>
-</header>
+    <div class="flex items-center gap-6 text-sm font-medium text-slate-300">
+      <a href={`${base}#about`} class="hover:text-cyan-400">About</a>
+      <a href={`${base}#skills`} class="hover:text-cyan-400">Skills</a>
+      <a href={`${base}#projects`} class="hover:text-cyan-400">Projects</a>
+      <a href={`${base}#architecture`} class="hover:text-cyan-400">Architecture</a>
+      <a href={`${base}resume`} class="hover:text-cyan-400">Resume</a>
+    </div>
+  </div>
+</nav>

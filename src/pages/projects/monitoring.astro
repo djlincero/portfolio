@@ -1,5 +1,7 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const base = import.meta.env.BASE_URL;
 ---
 
 <BaseLayout title="Enterprise Monitoring Stack">
@@ -10,14 +12,14 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
         Enterprise Monitoring Stack
     </h1>
 
-    <p class="mt-6 text-slate-400 text-lg">
+    <p class="mt-6 text-lg text-slate-400">
         Built a centralized monitoring and security platform using Prometheus,
         Grafana, and Wazuh to monitor servers, services, infrastructure health,
         and security events across the enterprise homelab.
     </p>
 
     <img
-        src="/images/network-topology.png"
+        src={`${base}images/network-topology.png`}
         alt="Enterprise Monitoring"
         class="mt-12 rounded-xl border border-slate-800 shadow-2xl"
     />
@@ -29,7 +31,7 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
                 Project Overview
             </h2>
 
-            <p class="mt-4 text-slate-400 leading-8">
+            <p class="mt-4 leading-8 text-slate-400">
                 Designed and deployed a complete enterprise monitoring solution
                 providing real-time infrastructure metrics, visualization,
                 alerting, and endpoint security monitoring.
@@ -74,20 +76,14 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
                 Features
             </h2>
 
-            <ul class="mt-6 list-disc pl-6 space-y-2 text-slate-400">
+            <ul class="mt-6 list-disc space-y-2 pl-6 text-slate-400">
 
                 <li>Infrastructure Monitoring</li>
-
                 <li>Performance Metrics</li>
-
                 <li>Real-Time Dashboards</li>
-
                 <li>Security Event Monitoring</li>
-
                 <li>Log Collection</li>
-
-                <li>Alerting & Notifications</li>
-
+                <li>Alerting &amp; Notifications</li>
                 <li>Endpoint Monitoring</li>
 
             </ul>

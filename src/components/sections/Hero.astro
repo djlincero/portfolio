@@ -1,39 +1,115 @@
-<section class="flex min-h-[90vh] items-center justify-center px-6">
-  <div class="mx-auto max-w-5xl text-center">
+---
+const base = import.meta.env.BASE_URL;
+---
 
-    <p class="mb-4 text-cyan-400 text-lg font-semibold">
-      Hello, I'm
-    </p>
+<section id="projects" class="py-24 bg-slate-900">
+  <div class="mx-auto max-w-7xl px-6">
 
-    <h1 class="text-6xl md:text-7xl font-extrabold">
-      Roscelin Nguefack
-    </h1>
+    <div class="text-center">
+      <h2 class="text-4xl font-bold text-white">
+        Enterprise Projects
+      </h2>
 
-    <h2 class="mt-6 text-2xl md:text-3xl text-slate-300">
-      Systems Administrator • Cybersecurity • Infrastructure Engineer
-    </h2>
+      <p class="mt-4 text-lg text-slate-400 max-w-3xl mx-auto">
+        A collection of enterprise infrastructure projects built and maintained
+        in my professional homelab environment.
+      </p>
+    </div>
 
-    <p class="mx-auto mt-8 max-w-3xl text-lg leading-8 text-slate-400">
-      I build enterprise infrastructure, automate systems with Ansible,
-      secure environments with Wazuh SIEM, and design modern Active Directory
-      and Proxmox homelabs.
-    </p>
+    <div class="mt-16 grid gap-8 md:grid-cols-2">
 
-    <div class="mt-10 flex flex-wrap justify-center gap-4">
-
+      <!-- Active Directory -->
       <a
-        href="#projects"
-        class="rounded-lg bg-cyan-500 px-6 py-3 font-semibold text-slate-950 transition hover:bg-cyan-400"
+        href={`${base}projects/active-directory`}
+        class="block rounded-2xl border border-slate-800 bg-slate-950 p-8 shadow-xl transition hover:-translate-y-2 hover:border-cyan-500"
       >
-        View Projects
+
+        <h3 class="text-2xl font-bold text-cyan-400">
+          Enterprise Active Directory
+        </h3>
+
+        <p class="mt-4 text-slate-400">
+          Built a redundant Active Directory environment with multiple Domain
+          Controllers, DNS, DHCP, Group Policy, Organizational Units and user
+          management.
+        </p>
+
+        <div class="mt-6 flex flex-wrap gap-2">
+          <span class="rounded bg-cyan-600 px-3 py-1 text-sm">Windows Server</span>
+          <span class="rounded bg-cyan-600 px-3 py-1 text-sm">Active Directory</span>
+          <span class="rounded bg-cyan-600 px-3 py-1 text-sm">DNS</span>
+          <span class="rounded bg-cyan-600 px-3 py-1 text-sm">Group Policy</span>
+        </div>
+
       </a>
 
+      <!-- Monitoring -->
       <a
-        href="/resume.pdf"
-        class="rounded-lg border border-slate-600 px-6 py-3 transition hover:border-cyan-400 hover:text-cyan-400"
+        href={`${base}projects/monitoring`}
+        class="block rounded-2xl border border-slate-800 bg-slate-950 p-8 shadow-xl transition hover:-translate-y-2 hover:border-cyan-500"
       >
-        Download Resume
+
+        <h3 class="text-2xl font-bold text-cyan-400">
+          Enterprise Monitoring Stack
+        </h3>
+
+        <p class="mt-4 text-slate-400">
+          Designed a monitoring platform using Prometheus, Grafana and Wazuh to
+          provide metrics, dashboards, logging and security monitoring.
+        </p>
+
+        <div class="mt-6 flex flex-wrap gap-2">
+          <span class="rounded bg-cyan-600 px-3 py-1 text-sm">Grafana</span>
+          <span class="rounded bg-cyan-600 px-3 py-1 text-sm">Prometheus</span>
+          <span class="rounded bg-cyan-600 px-3 py-1 text-sm">Wazuh</span>
+          <span class="rounded bg-cyan-600 px-3 py-1 text-sm">Alerting</span>
+        </div>
+
       </a>
+
+      <!-- Automation -->
+      <a
+        href={`${base}projects/automation`}
+        class="block rounded-2xl border border-slate-800 bg-slate-950 p-8 shadow-xl transition hover:-translate-y-2 hover:border-cyan-500"
+      >
+
+        <h3 class="text-2xl font-bold text-cyan-400">
+          Infrastructure Automation
+        </h3>
+
+        <p class="mt-4 text-slate-400">
+          Automated Linux and Windows administration using Ansible, reducing
+          manual configuration and improving consistency across enterprise
+          systems.
+        </p>
+
+        <div class="mt-6 flex flex-wrap gap-2">
+          <span class="rounded bg-cyan-600 px-3 py-1 text-sm">Ansible</span>
+          <span class="rounded bg-cyan-600 px-3 py-1 text-sm">Linux</span>
+          <span class="rounded bg-cyan-600 px-3 py-1 text-sm">Windows</span>
+          <span class="rounded bg-cyan-600 px-3 py-1 text-sm">SSH</span>
+        </div>
+
+      </a>
+
+      <!-- Infrastructure -->
+      <div class="rounded-2xl border border-slate-800 bg-slate-950 p-8 shadow-xl">
+        <h3 class="text-2xl font-bold text-cyan-400">
+          Virtualized Enterprise Infrastructure
+        </h3>
+
+        <p class="mt-4 text-slate-400">
+          Designed and deployed a segmented enterprise network using Proxmox,
+          pfSense, VLANs, routing, firewall policies and virtualization.
+        </p>
+
+        <div class="mt-6 flex flex-wrap gap-2">
+          <span class="rounded bg-cyan-600 px-3 py-1 text-sm">Proxmox</span>
+          <span class="rounded bg-cyan-600 px-3 py-1 text-sm">pfSense</span>
+          <span class="rounded bg-cyan-600 px-3 py-1 text-sm">VLANs</span>
+          <span class="rounded bg-cyan-600 px-3 py-1 text-sm">Networking</span>
+        </div>
+      </div>
 
     </div>
 

@@ -1,5 +1,7 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const base = import.meta.env.BASE_URL;
 ---
 
 <BaseLayout title="Infrastructure Automation">
@@ -10,14 +12,14 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
         Infrastructure Automation
     </h1>
 
-    <p class="mt-6 text-slate-400 text-lg">
+    <p class="mt-6 text-lg text-slate-400">
         Automated Linux and Windows infrastructure using Ansible to deploy,
         configure, and manage enterprise systems consistently across the
         homelab environment.
     </p>
 
     <img
-        src="/images/network-topology.png"
+        src={`${base}images/network-topology.png`}
         alt="Infrastructure Automation"
         class="mt-12 rounded-xl border border-slate-800 shadow-2xl"
     />
@@ -29,7 +31,7 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
                 Project Overview
             </h2>
 
-            <p class="mt-4 text-slate-400 leading-8">
+            <p class="mt-4 leading-8 text-slate-400">
                 Built an automation platform using Ansible to manage Linux and
                 Windows hosts from a centralized control node. The project
                 includes inventories, playbooks, roles, SSH authentication,
@@ -76,22 +78,15 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
                 Features
             </h2>
 
-            <ul class="mt-6 list-disc pl-6 space-y-2 text-slate-400">
+            <ul class="mt-6 list-disc space-y-2 pl-6 text-slate-400">
 
                 <li>Linux Automation</li>
-
                 <li>Windows Automation</li>
-
                 <li>Playbooks</li>
-
                 <li>Roles</li>
-
                 <li>Inventory Management</li>
-
                 <li>SSH Key Authentication</li>
-
                 <li>WinRM Remote Management</li>
-
                 <li>Configuration Management</li>
 
             </ul>
